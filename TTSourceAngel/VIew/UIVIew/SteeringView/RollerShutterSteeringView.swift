@@ -3,6 +3,7 @@ import UIKit
 class RollerShutterSteeringView: UIView {
     
     var device: RollerShutterObject?
+    weak var delegate: SaveDeviceDelegate?
     
     lazy var imageView = UIImageView()
     lazy var slider: UISlider = {
@@ -42,6 +43,7 @@ class RollerShutterSteeringView: UIView {
     @objc func sliderChange() {
         device?.position = NSDecimalNumber(value: slider.value)
         valueLabel.text = String(format: "%.0f", slider.value)
+        delegate?.saveDevice(item: device!)
     }
     
     func config(item: RollerShutterObject) {
@@ -72,7 +74,8 @@ class RollerShutterSteeringView: UIView {
             valueLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
+            imageView.topAnchor.constraint(greaterThanOrEqualTo: self.topAnchor, constant: 100),
+            imageView.bottomAnchor.constraint(equalTo: valueLabel.topAnchor, constant: -20),
             imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             imageView.widthAnchor.constraint(equalToConstant: 100),
             imageView.heightAnchor.constraint(equalToConstant: 100)

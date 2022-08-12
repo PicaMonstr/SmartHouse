@@ -26,19 +26,6 @@ class SteeringViewController: UIViewController, Coordinating {
             title = device.deviceName
         }
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        if view === LightSteeringView.self {
-            viewModel.closeSteeringViewController(item: (view as! LightSteeringView).device!)
-        } else if view === HeaterSteeringView.self {
-            viewModel.closeSteeringViewController(item: (view as! HeaterSteeringView).device!)
-        } else if view === RollerShutterSteeringView.self {
-            viewModel.closeSteeringViewController(item: (view as! RollerShutterSteeringView).device!)
-        }
-        coordinator?.controllSteeringViewController(with: .closeDetailVC)
-        CoreDataStack.shared.saveContext()
-    }
 }
 
 

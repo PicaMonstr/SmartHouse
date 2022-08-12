@@ -10,6 +10,7 @@ import UIKit
 class HeaterSteeringView: UIView {
     
     var device: HeaterObject?
+    weak var delegate: SaveDeviceDelegate?
     
     lazy var imageView = UIImageView()
     lazy var switchMode: UISwitch = {
@@ -61,11 +62,13 @@ class HeaterSteeringView: UIView {
     @objc func switchChangeHeater() {
         (switchMode.isOn) ? (device?.mode = Mode.on.rawValue) : (device?.mode = Mode.off.rawValue)
         (switchMode.isOn) ? (imageView.image = UIImage(named: "DeviceHeaterOnIcon")) : (imageView.image = UIImage(named: "DeviceHeaterOffIcon"))
+        delegate?.saveDevice(item: device!)
     }
     
     @objc func stepperTouch() {
         device?.temperature = NSDecimalNumber(value: stepper.value)
         valueLabel.text = String(format: "%.1f", stepper.value) + "˚C"
+        delegate?.saveDevice(item: device!)
     }
     
     func config(item: HeaterObject) {
@@ -96,8 +99,8 @@ class HeaterSteeringView: UIView {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            switchMode.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            switchMode.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+            switchMode.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            switchMode.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20)
         ])
         NSLayoutConstraint.activate([
             stepper.centerXAnchor.constraint(equalTo: self.centerXAnchor),
@@ -108,7 +111,8 @@ class HeaterSteeringView: UIView {
             valueLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
+            imageView.topAnchor.constraint(greaterThanOrEqualTo: self.topAnchor, constant: 100),
+            imageView.bottomAnchor.constraint(equalTo: valueLabel.topAnchor, constant: -20),
             imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             imageView.widthAnchor.constraint(equalToConstant: 100),
             imageView.heightAnchor.constraint(equalToConstant: 100)
