@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TTSourceAngel
+
+  Created by Denys on 06.08.2022.
+  
+*/
+
+"value_Label_Heater" = "Температура: ";
+"value_Label_Light" = "яркість: ";
+"value_Label_RollerShutter" = "позиція: ";
+"title_Devices_List" = "Список дивайсів";

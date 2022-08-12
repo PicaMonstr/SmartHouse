@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DeviceObject" representedClassName="DeviceObject" syncable="YES">
+        <attribute name="deviceName" attributeType="String"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productType" attributeType="String"/>
+    </entity>
+    <entity name="HeaterObject" representedClassName="HeaterObject" parentEntity="DeviceObject" syncable="YES">
+        <attribute name="mode" attributeType="String"/>
+        <attribute name="temperature" attributeType="Decimal" defaultValueString="0.0"/>
+    </entity>
+    <entity name="LightObject" representedClassName="LightObject" parentEntity="DeviceObject" syncable="YES">
+        <attribute name="intensity" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="mode" attributeType="String"/>
+    </entity>
+    <entity name="RollerShutterObject" representedClassName="RollerShutterObject" parentEntity="DeviceObject" syncable="YES">
+        <attribute name="position" attributeType="Decimal" defaultValueString="0.0"/>
+    </entity>
+    <elements>
+        <element name="DeviceObject" positionX="-18" positionY="36" width="128" height="74"/>
+        <element name="HeaterObject" positionX="0" positionY="108" width="128" height="59"/>
+        <element name="LightObject" positionX="18" positionY="117" width="128" height="59"/>
+        <element name="RollerShutterObject" positionX="36" positionY="126" width="128" height="44"/>
+    </elements>
+</model>

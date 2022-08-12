@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TTSourceAngel
+
+  Created by Denys on 06.08.2022.
+  
+*/
+"value_Label_Heater" = "temperatura: ";
+"value_Label_Light" = "intensity: ";
+"value_Label_RollerShutter" = "position: ";
+"title_Devices_List" = "Devices List";
