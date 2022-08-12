@@ -13,19 +13,6 @@ class SteeringViewModel: SaveDeviceDelegate {
         self.device = item
         CoreDataStack.shared.saveContext()
     }
-//    func closeSteeringView<T: UIView>(item: T) {
-//        if item === LightSteeringView.self {
-//            closeSteeringViewController(item: (item as! LightSteeringView).device!)
-//        } else if item === HeaterSteeringView.self {
-//            closeSteeringViewController(item: (item as! HeaterSteeringView).device!)
-//        } else if item === RollerShutterSteeringView.self {
-//            closeSteeringViewController(item: (item as! RollerShutterSteeringView).device!)
-//        }
-//    }
-//    func closeSteeringViewController<T: DeviceObject>(item: T) {
-//        self.device = item
-//        CoreDataStack.shared.saveContext()
-//    }
 
     func options() -> UIView {
         guard let device = device else {
