@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9ABAC0AD289438880031422D"
                BuildableName = "TTSourceAngel.app"
-               BlueprintName = "TTSourceAngel"
-               ReferencedContainer = "container:TTSourceAngel.xcodeproj">
+               BlueprintName = "SmartHouse"
+               ReferencedContainer = "container:SmartHouse.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,8 +46,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9ABAC0AD289438880031422D"
             BuildableName = "TTSourceAngel.app"
-            BlueprintName = "TTSourceAngel"
-            ReferencedContainer = "container:TTSourceAngel.xcodeproj">
+            BlueprintName = "SmartHouse"
+            ReferencedContainer = "container:SmartHouse.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9ABAC0AD289438880031422D"
             BuildableName = "TTSourceAngel.app"
-            BlueprintName = "TTSourceAngel"
-            ReferencedContainer = "container:TTSourceAngel.xcodeproj">
+            BlueprintName = "SmartHouse"
+            ReferencedContainer = "container:SmartHouse.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

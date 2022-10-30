@@ -48,7 +48,7 @@
 		9A7A392C28A584EC0015E84B /* HeaterSteeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaterSteeringView.swift; sourceTree = "<group>"; };
 		9A7A392E28A585A00015E84B /* RollerShutterSteeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollerShutterSteeringView.swift; sourceTree = "<group>"; };
 		9A7A393128A589F70015E84B /* View+RemoveAllConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RemoveAllConstraints.swift"; sourceTree = "<group>"; };
-		9ABAC0AE289438880031422D /* TTSourceAngel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTSourceAngel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ABAC0AE289438880031422D /* SmartHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABAC0B1289438880031422D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ABAC0B3289438880031422D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9ABAC0B5289438880031422D /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE806B3289EBB0F009A824F /* Localizable.strings */,
-				9ABAC0B0289438880031422D /* TTSourceAngel */,
+				9ABAC0B0289438880031422D /* SmartHouse */,
 				9ABAC0AF289438880031422D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,12 +125,12 @@
 		9ABAC0AF289438880031422D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9ABAC0AE289438880031422D /* TTSourceAngel.app */,
+				9ABAC0AE289438880031422D /* SmartHouse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9ABAC0B0289438880031422D /* TTSourceAngel */ = {
+		9ABAC0B0289438880031422D /* SmartHouse */ = {
 			isa = PBXGroup;
 			children = (
 				9ABAC0DB2896E12F0031422D /* Service */,
@@ -147,7 +147,7 @@
 				9ABAC0C22894388B0031422D /* Info.plist */,
 				9ABAC0BA289438880031422D /* TTSourceAngel.xcdatamodeld */,
 			);
-			path = TTSourceAngel;
+			path = SmartHouse;
 			sourceTree = "<group>";
 		};
 		9ABAC0CF28967CD40031422D /* VIew */ = {
@@ -260,9 +260,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9ABAC0AD289438880031422D /* TTSourceAngel */ = {
+		9ABAC0AD289438880031422D /* SmartHouse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9ABAC0C52894388B0031422D /* Build configuration list for PBXNativeTarget "TTSourceAngel" */;
+			buildConfigurationList = 9ABAC0C52894388B0031422D /* Build configuration list for PBXNativeTarget "SmartHouse" */;
 			buildPhases = (
 				9ABAC0AA289438880031422D /* Sources */,
 				9ABAC0AB289438880031422D /* Frameworks */,
@@ -272,11 +272,11 @@
 			);
 			dependencies = (
 			);
-			name = TTSourceAngel;
+			name = SmartHouse;
 			packageProductDependencies = (
 			);
 			productName = TTSourceAngel;
-			productReference = 9ABAC0AE289438880031422D /* TTSourceAngel.app */;
+			productReference = 9ABAC0AE289438880031422D /* SmartHouse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9ABAC0A9289438880031422D /* Build configuration list for PBXProject "TTSourceAngel" */;
+			buildConfigurationList = 9ABAC0A9289438880031422D /* Build configuration list for PBXProject "SmartHouse" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -310,7 +310,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9ABAC0AD289438880031422D /* TTSourceAngel */,
+				9ABAC0AD289438880031422D /* SmartHouse */,
 			);
 		};
 /* End PBXProject section */
@@ -564,7 +564,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9ABAC0A9289438880031422D /* Build configuration list for PBXProject "TTSourceAngel" */ = {
+		9ABAC0A9289438880031422D /* Build configuration list for PBXProject "SmartHouse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9ABAC0C32894388B0031422D /* Debug */,
@@ -573,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9ABAC0C52894388B0031422D /* Build configuration list for PBXNativeTarget "TTSourceAngel" */ = {
+		9ABAC0C52894388B0031422D /* Build configuration list for PBXNativeTarget "SmartHouse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9ABAC0C62894388B0031422D /* Debug */,
